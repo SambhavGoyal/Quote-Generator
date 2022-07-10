@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icons8-sign-language-h-16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Quote Generator</title>
+</head>
+<body>
+    <div class="quote-container" id="quote-container">
+        <!-- EMMET ABB: div.classname#idname -->
+        <!-- Quote -->
+        <div class="quote-text">
+            <!-- EMMET ABB: .quote-text -->
+            <!-- Use the class to adjust size for quotes -->
+            <i class="fa-solid fa-quote-left"></i>
+            <!-- i class from font aweosme for quote icon -->
+            <span id="quote">
+                <!-- ABB: span#quote -->
+                <!-- The span element wont take space in the body and can be targetted by the JS directly to change the quote later -->
+                
+                <!-- To be directly added using JS -->
+            </span>
+        </div>
+        <!-- Author -->
+        <div class="quote-author">
+            <span id="author">
+                <!-- To be dynamically added using JS -->
+            </span>
+        </div>
+        <!-- Buttons -->
+        <!-- Container for buttons: Allows us to have flexbox different from one in body, creating ample seperation as needed-->
+        <div class="button-container">
+            <button class="button-twitter" id="twitter" title="Tweet Now">
+                <!-- Title for explaining on hover -->
+                <i class="fa-brands fa-twitter"></i> 
+            </button>
+            <button id="new-quote">
+                NEW QUOTE
+            </button>
+        </div>
+    </div>
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+    <!-- Script -->
+    <script src="quotes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
